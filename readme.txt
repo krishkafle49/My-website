@@ -9,7 +9,7 @@ Template Info:
 Name: 		Krish - Free Bootstrap One Page Portfolio Resume Tempalte
 Version: 	1.0
 Author: 	ThemeSINE
-Website: 	https://www.themesine.com/
+Website: 	https://www.krishna-kafle.com.np/
 
 
 Changelog:
