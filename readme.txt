@@ -1,12 +1,12 @@
 -----------------------
 # README
 -----------------------
-Browny is a one page bootstrap 3 based resume/portfolio template.
+Krish is a one page bootstrap 3 based resume/portfolio template.
 
 
 Template Info:
 -----------------------
-Name: 		Browny - Free Bootstrap One Page Portfolio Resume Tempalte
+Name: 		Krish - Free Bootstrap One Page Portfolio Resume Tempalte
 Version: 	1.0
 Author: 	ThemeSINE
 Website: 	https://www.themesine.com/
@@ -31,4 +31,4 @@ Credits:
 
 License:
 -----------------------
-This template is under Free License - https://www.themesine.com/license/
+This template is under Free License - https://www.krishna-kafle.com.np/license/
