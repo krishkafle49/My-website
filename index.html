@@ -590,21 +590,24 @@ Follow my journey as I turn ideas into reality. Let’s build something great to
 											<a href="#">
 												<img src="gosaikunda.jpg" class="adventure-img" onclick="document.getElementById('gosaikundaBox').style.display='block'" />
 
-<img src="mardi.jpg" class="adventure-img" onclick="document.getElementById('mardiBox').style.display='block'" />
+<img src="mardi.jpg" class="adventure-img" onclick="showLearnMore('mardiBtn')" />
+<button id="mardiBtn" class="learn-more-btn" onclick="openModal('mardiModal')">Learn More</button>
 
-<div id="mardiBox" class="adventure-box">
-  <h2>Mardi Base Camp – Itinerary & Details</h2>
-  <ul>
-    <li><strong>Day 1:</strong> Pokhara to Kande, trek to Forest Camp</li>
-    <li><strong>Day 2:</strong> Trek to High Camp</li>
-    <li><strong>Day 3:</strong> Reach Mardi Base Camp & return to High Camp</li>
-    <li><strong>Day 4:</strong> Trek down and return to Pokhara</li>
-  </ul>
-  <p><strong>Best time:</strong> Sept–Dec / Mar–May<br>
-  <strong>Views:</strong> Annapurna South, Machhapuchhre<br>
-  <strong>Tips:</strong> Pack light, carry a power bank</p>
-  <button class="close-btn" onclick="document.getElementById('mardiBox').style.display='none'">Close</button>
+<div id="mardiModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mardiModal')">&times;</span>
+    <h2>Mardi Base Camp – Itinerary & Details</h2>
+    <ul>
+      <li><strong>Day 1:</strong> Kande to Forest Camp</li>
+      <li><strong>Day 2:</strong> Forest Camp to High Camp</li>
+      <li><strong>Day 3:</strong> Mardi Base Camp visit & return</li>
+      <li><strong>Day 4:</strong> Trek down to Pokhara</li>
+    </ul>
+    <p><strong>Views:</strong> Machhapuchhre, Annapurna<br>
+    <strong>Tips:</strong> Stay hydrated, wear layers</p>
+  </div>
 </div>
+
 
 												MARDI BASE CAMP
 											</a>
@@ -616,18 +619,27 @@ Follow my journey as I turn ideas into reality. Let’s build something great to
 											<a href="#">
 												<img src="gosaikunda.jpg" class="adventure-img" onclick="document.getElementById('gosaikundaBox').style.display='block'" />
 
-<div id="gosaikundaBox" class="adventure-box">
-  <h2>Gosaikunda – Itinerary & Details</h2>
-  <ul>
-    <li><strong>Day 1:</strong> Travel to Dhunche</li>
-    <li><strong>Day 2:</strong> Trek to Chandanbari</li>
-    <li><strong>Day 3:</strong> Reach Gosaikunda Lake</li>
-    <li><strong>Day 4:</strong> Return trek</li>
-  </ul>
-  <p><strong>Best time:</strong> Sept–Nov / Feb–April<br>
-  <strong>Altitude:</strong> ~4,380m<br>
-  <strong>Tips:</strong> Acclimatize properly, carry warm gear</p>
-  <button class="close-btn" onclick="document.getElementById('gosaikundaBox').style.display='none'">Close</button>
+<!-- Image -->
+<img src="gosaikunda.jpg" class="adventure-img" onclick="showLearnMore('gosaikundaBtn')" />
+
+<!-- Learn More Button -->
+<button id="gosaikundaBtn" class="learn-more-btn" onclick="openModal('gosaikundaModal')">Learn More</button>
+
+<!-- Popup -->
+<div id="gosaikundaModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('gosaikundaModal')">&times;</span>
+    <h2>Gosaikunda – Itinerary & Details</h2>
+    <ul>
+      <li><strong>Day 1:</strong> Travel to Dhunche</li>
+      <li><strong>Day 2:</strong> Trek to Chandanbari</li>
+      <li><strong>Day 3:</strong> Reach Gosaikunda Lake</li>
+      <li><strong>Day 4:</strong> Return trek</li>
+    </ul>
+    <p><strong>Best time:</strong> Sept–Nov / Feb–April<br>
+    <strong>Altitude:</strong> ~4,380m<br>
+    <strong>Tips:</strong> Acclimatize properly, carry warm gear</p>
+  </div>
 </div>
 
 												GOSAIKUNDA LAKE
@@ -643,18 +655,22 @@ Follow my journey as I turn ideas into reality. Let’s build something great to
 											<a href="#">
 												<img src="mustang.jpg" class="adventure-img" onclick="document.getElementById('mustangBox').style.display='block'" />
 
-<div id="mustangBox" class="adventure-box">
-  <h2>Mustang – Itinerary & Details</h2>
-  <ul>
-    <li><strong>Day 1:</strong> Drive/flight to Jomsom</li>
-    <li><strong>Day 2:</strong> Visit Muktinath, Kagbeni</li>
-    <li><strong>Day 3:</strong> Explore Marpha, apple orchards</li>
-    <li><strong>Day 4:</strong> Return to Pokhara</li>
-  </ul>
-  <p><strong>Best time:</strong> Spring & Autumn<br>
-  <strong>Highlights:</strong> Desert landscape, Tibetan culture<br>
-  <strong>Tips:</strong> Sunscreen, hydration, respect local customs</p>
-  <button class="close-btn" onclick="document.getElementById('mustangBox').style.display='none'">Close</button>
+<img src="mustang.jpg" class="adventure-img" onclick="showLearnMore('mustangBtn')" />
+<button id="mustangBtn" class="learn-more-btn" onclick="openModal('mustangModal')">Learn More</button>
+
+<div id="mustangModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mustangModal')">&times;</span>
+    <h2>Mustang – Itinerary & Details</h2>
+    <ul>
+      <li><strong>Day 1:</strong> Fly/Drive to Jomsom</li>
+      <li><strong>Day 2:</strong> Visit Muktinath, Kagbeni</li>
+      <li><strong>Day 3:</strong> Explore Marpha</li>
+      <li><strong>Day 4:</strong> Return to Pokhara</li>
+    </ul>
+    <p><strong>Highlights:</strong> Tibetan culture, dry landscapes<br>
+    <strong>Tips:</strong> Carry windproof clothes</p>
+  </div>
 </div>
 
 												MUSTANG
@@ -670,17 +686,21 @@ Follow my journey as I turn ideas into reality. Let’s build something great to
 											<a href="#">
 												<img src="kapuche.jpg" class="adventure-img" onclick="document.getElementById('kapucheBox').style.display='block'" />
 
-<div id="kapucheBox" class="adventure-box">
-  <h2>Kapuche Glacier Lake – Itinerary & Details</h2>
-  <ul>
-    <li><strong>Day 1:</strong> Pokhara to Sikles</li>
-    <li><strong>Day 2:</strong> Trek to Hugu Goth</li>
-    <li><strong>Day 3:</strong> Visit Kapuche Lake and return</li>
-  </ul>
-  <p><strong>Altitude:</strong> 2,546m (lowest glacier lake)<br>
-  <strong>Highlights:</strong> Frozen beauty, rare trails<br>
-  <strong>Tips:</strong> Good shoes, torchlight, guide</p>
-  <button class="close-btn" onclick="document.getElementById('kapucheBox').style.display='none'">Close</button>
+<img src="kapuche.jpg" class="adventure-img" onclick="showLearnMore('kapucheBtn')" />
+<button id="kapucheBtn" class="learn-more-btn" onclick="openModal('kapucheModal')">Learn More</button>
+
+<div id="kapucheModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('kapucheModal')">&times;</span>
+    <h2>Kapuche Glacier Lake – Itinerary & Details</h2>
+    <ul>
+      <li><strong>Day 1:</strong> Drive to Sikles</li>
+      <li><strong>Day 2:</strong> Trek to Hugu Goth</li>
+      <li><strong>Day 3:</strong> Visit Kapuche & return</li>
+    </ul>
+    <p><strong>Altitude:</strong> 2,546m<br>
+    <strong>Tips:</strong> Bring torchlight and snacks</p>
+  </div>
 </div>
 
 												KAPUCHE GLACIER LAKE
@@ -693,17 +713,23 @@ Follow my journey as I turn ideas into reality. Let’s build something great to
 											<a href="#">
 												<img src="ghandruk.jpg" class="adventure-img" onclick="document.getElementById('ghandrukBox').style.display='block'" />
 
-<div id="ghandrukBox" class="adventure-box">
-  <h2>Ghandruk – Itinerary & Details</h2>
-  <ul>
-    <li><strong>Day 1:</strong> Pokhara to Nayapul, trek to Ghandruk</li>
-    <li><strong>Day 2:</strong> Explore village, local museum</li>
-    <li><strong>Day 3:</strong> Return to Pokhara</li>
-  </ul>
-  <p><strong>Highlights:</strong> Gurung culture, Machhapuchhre views<br>
-  <strong>Tips:</strong> Ideal for beginners, carry a camera!</p>
-  <button class="close-btn" onclick="document.getElementById('ghandrukBox').style.display='none'">Close</button>
+<img src="ghandruk.jpg" class="adventure-img" onclick="showLearnMore('ghandrukBtn')" />
+<button id="ghandrukBtn" class="learn-more-btn" onclick="openModal('ghandrukModal')">Learn More</button>
+
+<div id="ghandrukModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('ghandrukModal')">&times;</span>
+    <h2>Ghandruk – Itinerary & Details</h2>
+    <ul>
+      <li><strong>Day 1:</strong> Nayapul to Ghandruk</li>
+      <li><strong>Day 2:</strong> Explore village & culture</li>
+      <li><strong>Day 3:</strong> Return to Pokhara</li>
+    </ul>
+    <p><strong>Highlights:</strong> Gurung museum, mountain views<br>
+    <strong>Tips:</strong> Perfect weekend hike</p>
+  </div>
 </div>
+
 
 												GHANDRUK
 											</a>
