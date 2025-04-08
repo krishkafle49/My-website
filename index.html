@@ -619,28 +619,102 @@ Follow my journey as I turn ideas into reality. Let’s build something great to
 											<a href="#">
 												<img src="gosaikunda.jpg" class="adventure-img" onclick="document.getElementById('gosaikundaBox').style.display='block'" />
 
-<!-- Image -->
-<img src="gosaikunda.jpg" class="adventure-img" onclick="showLearnMore('gosaikundaBtn')" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure Popup</title>
+  <style>
+    .adventure-image {
+      width: 300px;
+      cursor: pointer;
+      position: relative;
+    }
 
-<!-- Learn More Button -->
-<button id="gosaikundaBtn" class="learn-more-btn" onclick="openModal('gosaikundaModal')">Learn More</button>
+    .learn-more-btn {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      display: none;
+    }
 
-<!-- Popup -->
-<div id="gosaikundaModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('gosaikundaModal')">&times;</span>
-    <h2>Gosaikunda – Itinerary & Details</h2>
-    <ul>
-      <li><strong>Day 1:</strong> Travel to Dhunche</li>
-      <li><strong>Day 2:</strong> Trek to Chandanbari</li>
-      <li><strong>Day 3:</strong> Reach Gosaikunda Lake</li>
-      <li><strong>Day 4:</strong> Return trek</li>
-    </ul>
-    <p><strong>Best time:</strong> Sept–Nov / Feb–April<br>
-    <strong>Altitude:</strong> ~4,380m<br>
-    <strong>Tips:</strong> Acclimatize properly, carry warm gear</p>
+    .image-container:hover .learn-more-btn {
+      display: block;
+    }
+
+    /* Popup Styles */
+    .popup {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .popup-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Gosaikunda Image + Button -->
+<div class="image-container" style="position: relative; display: inline-block;">
+  <img src="gosaikunda.jpg" alt="Gosaikunda" class="adventure-image">
+  <button class="learn-more-btn" onclick="openPopup('gosaikunda')">Learn More</button>
+</div>
+
+<!-- Popup for Gosaikunda -->
+<div id="gosaikunda" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup('gosaikunda')">&times;</span>
+    <h2>Gosaikunda</h2>
+    <p>
+      Gosaikunda is a sacred alpine lake nestled in the Langtang National Park of Nepal, sitting at an altitude of 4,380 meters. Known for its religious significance, Gosaikunda attracts thousands of pilgrims, especially during the Janai Purnima festival in August. Hindus believe the lake was created by Lord Shiva when he struck his trident into the mountain to quench his thirst. Surrounded by other smaller lakes like Bhairav Kunda and Saraswati Kunda, the serene blue waters contrast beautifully with the rugged Himalayan landscape.
+      <br><br>
+      Trekkers start their journey from Dhunche, passing through rhododendron forests, traditional Tamang villages, and yak pastures. Along the way, panoramic views of the Langtang and Ganesh Himal ranges keep adventurers inspired. The area is also part of the popular Langtang–Gosaikunda–Helambu trekking circuit.
+      <br><br>
+      <strong>Best time to visit:</strong> March–May or September–November. Since Gosaikunda sits at high altitude, proper acclimatization is necessary to avoid altitude sickness. It’s not only a spiritual journey but also a breathtaking trek through untouched natural beauty.
+    </p>
   </div>
 </div>
+
+<!-- JS for Popup -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+</body>
+</html>
 
 												GOSAIKUNDA LAKE
 											</a>
